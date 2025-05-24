@@ -4,12 +4,12 @@ import tkinter
 class AppSettings():
     def __init__(self, currency:str, dateFormat:str, theme:str, backupEnabled:bool):
         self.currency = currency
-        self.dateForamt = dateFormat
-        self.theme = theme 
+        self.dateFormat = dateFormat
+        self.theme = theme
         self.backupEnabled = backupEnabled
     def loadSettings():
         pass
-    
+
     def saveSettings():
         pass
 
@@ -20,7 +20,7 @@ class Database():
     def saveGoal(goal:Goal):
         output:bool
         pass
-    
+
     def loadGoal(goalId:str):
         output:Goal
         pass
@@ -29,14 +29,14 @@ class Database():
         output:list
         pass
 
-    def upadteGoal(goal:Goal):
+    def updateGoal(goal:Goal):
         output:bool
         pass
 
     def deleteGoal(goalId:str):
         output:bool
         pass
-    
+
     def saveAppSettings(settings:AppSettings):
         output:bool
         pass
@@ -49,7 +49,7 @@ class GoalSettings():
     def __init__(self, goalId:str,notificationsEnabled:bool, reminderFrequency:int, autoTracking:bool):
         self.goalId = goalId
         self.notificationsEnabled = notificationsEnabled
-        self.reminderFrequency = reminderFrequency 
+        self.reminderFrequency = reminderFrequency
         self.autoTracking = autoTracking
 
     def validate():
@@ -75,7 +75,7 @@ class GoalData():
         output:bool
         pass
 
-class  GoalDetailsUI():
+class GoalDetailsUI():
     def __init__(self, goal:Goal):
         self.goal = goal
 
@@ -89,7 +89,7 @@ class  GoalDetailsUI():
         pass
 
 
-class  GoalSettingsUI():
+class GoalSettingsUI():
     def __init__(self, goal:Goal):
         self.goal = goal
 
@@ -121,7 +121,7 @@ class Goal():
     def updateProgress(amount:float):
         pass
 
-    def claculateProgress():
+    def calculateProgress():
         output:float
         pass
 
@@ -165,13 +165,12 @@ class AppSettingsUI():
     def __init__(self, appSettings:AppSettings):
         self.appSettings = appSettings
 
-    
+
     def displaySettings():
         pass
 
 
-    def modifySettings(setings:AppSettings):
-
+    def modifySettings(settings:AppSettings):
         pass
 
     def resetSettings():
@@ -183,7 +182,7 @@ class MainMenuUI():
 
     def displayGoalsList():
         pass
-    
+
     def showCreateGoalOption():
         pass
 
@@ -206,6 +205,3 @@ class GoalCreationUI():
 
     def cancelCreation():
         pass
-
-
-
